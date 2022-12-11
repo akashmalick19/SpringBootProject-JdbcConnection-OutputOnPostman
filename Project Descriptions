@@ -1,0 +1,20 @@
+# SpringBootProject-JdbcConnection-OutputOnPostman
+
+ProjectDescriptions:
+		      This project is Spring Boot project.In this Project JDBC connection is configured.
+		      Here I have been created many operations of CURD APIs for fetch data, inserting data, deletion data, update data and manipulating of data into the Data Base.
+		      In this project there is Only One Table i.e EmployeeEntity table.
+		      All CURD operations are done by using RowMApper Interface and JDBC Templte Class's Methods like query(), queryForObject(),update() methods.
+		      In this project I have use MySQL Woekbench for Data Base and Testing purpose uses Postman Applications.
+
+
+APIs Used :- 
+		1. @RequestMapping(value = "/saveData",method = RequestMethod.POST) : All Employee Details are store inside EmployeeEntity DataBase Table by using this API call.
+
+		2. @RequestMapping(value = "/showAll",method = RequestMethod.GET) : All records are show or fetch from EmployeeEntity Data Base Table with some proper conditions checking.
+
+		3. @RequestMapping(value = "/showSpecificData",method = RequestMethod.GET) :  Here passes the specific Employee-Name as a parametter with the Apis, if the specified Employee-Name is exist inside the EmployeeEntity Data Base then it will be shown.Also checking some Proper Conditions.
+
+		4. @RequestMapping(value = "/update",method = RequestMethod.PUT) : Employee-Age will be update of specific Employeer if Employee-Id is exist inside EmployeeEntity Table.
+
+		5. @RequestMapping(value = "/deleteSpecificData",method = RequestMethod.DELETE) : The Specified Employee record will be Deleted if the specified employee-Id will present inside EmployeeEntity DataBase Table.
